@@ -1,0 +1,41 @@
+body {
+	position: relative;
+	margin: 0;
+	background-image: url('img/linedpaper.png');
+}
+#left {
+	float: left;
+	width: 400px;
+	height: 100%;
+	overflow-y: scroll;
+}
+#game {
+	position: absolute;
+	left: 400px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.selectImg {
+	border: 1px dashed gray;
+	margin: 5px;
+	padding: 2px;
+	cursor: move;
+}
+
+.sticker {
+	cursor: move;
+}
+
+.sticker, .selectImg {
+	max-width: 400px;
+}
+
+.sticker-text {
+	padding: 10px;
+}
+
+.sticker-dragging {
+	background-color: rgba(0, 0, 0, 0.1);
+}
